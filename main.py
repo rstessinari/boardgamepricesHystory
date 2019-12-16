@@ -37,7 +37,7 @@ def print_lowest_game_price(game,df):
     print("The lowest price for {} was £{} on {} at {}".format(game,df['Price'].min(),df[df['Price']==df['Price'].min()]['Date'].to_string(index=False),df[df['Price']==df['Price'].min()]['Store'].to_string(index=False)))
 
 def print_lowest_price(df):
-    print("The lowest price for {} was £{} on {} at {}".format(game,df['Price'].min(),df[df['Price']==df['Price'].min()]['Date'].to_string(index=False),df[df['Price']==df['Price'].min()]['Store'].to_string(index=False)))
+    print("The lowest price found on the given url was £{} on {} at {}".format(df['Price'].min(),df[df['Price']==df['Price'].min()]['Date'].to_string(index=False),df[df['Price']==df['Price'].min()]['Store'].to_string(index=False)))
 
 
 def get_dataframes_by_url(url):
